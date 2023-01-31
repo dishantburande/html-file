@@ -1,0 +1,35 @@
+/*  Write a program that would print the information (name, year of joining, address) of three employees by creating a class named 'Employee' and inside the class there is a function print_details printing all the details of the employee .The output should be as follows (Note that you don't have to print it in the same way)
+
+Name        Year of joining        Address
+
+Robert            1994            64C- WallsStreat
+
+Sam              2000             68D- WallsStreat
+
+John              1999            26B- WallsStreat  */
+   
+
+class employee
+{
+  constructor(name,year,adress)
+  {
+  this.name = name;
+  this.yr = year;
+  this.adr = adress;
+  }
+
+
+  print_details()
+  {
+    console.log(this.name," ",this.yr," ",this.adr)
+  }
+
+}
+
+  var E1=new employee("Robert",1994,"64C- WallsStreat")
+  var E2 =new employee("Sam",2000,"68D- WallsStreat")
+  var E3 =new employee("John",1999,"26B- WallsStreat")
+
+E1.print_details()
+E2.print_details()
+E3.print_details()

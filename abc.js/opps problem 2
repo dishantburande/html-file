@@ -1,0 +1,18 @@
+class employee
+{
+    constructor(name,year,adress)
+    {
+    this.n = name;
+    this.yr = year;
+    this.adr =adress;
+    }
+
+
+    print_details()
+    {
+     console.log(this.n," ",this.yr," ",this.adr)
+    }
+}    
+
+    var E1=new emlpoyee("dishant",2018,"dewada khurd")
+    E1.print_details()
