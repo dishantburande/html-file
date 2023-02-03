@@ -57,8 +57,12 @@ function filterItems(e){
   var items = itemList.getElementsByTagName('li');
   // Convert to an array
   Array.from(items).forEach(function(item){
-    var itemName = item.firstChild.textContent;
-    if(itemName.toLowerCase().indexOf(text) != -1){
+
+    const itemName = item.firstChild.textContent;
+    const description = item.ChildNode[0].textContent;
+
+    
+    if(itemName.toLowerCase().indexOf(text) != -1 || description.toLowerCase){
       item.style.display = 'block';
     } else {
       item.style.display = 'none';
